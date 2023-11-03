@@ -1,0 +1,6 @@
+etc_unbound/root.key
+etc_unbound/unbound.log
+etc_unbound/unbound_control.key
+etc_unbound/unbound_control.pem
+etc_unbound/unbound_server.key
+etc_unbound/unbound_server.pem

@@ -1,0 +1,22 @@
+services:
+  unbound:
+    image: alpinelinux/unbound
+    expose:
+      - "53"
+    networks:
+      - dns
+    # network_mode: bridge
+    ports:
+      - target: 53
+        published: 53
+        protocol: tcp
+        mode: host
+      - target: 53
+        published: 53
+        protocol: udp
+        mode: host
+    volumes:
+      - ./etc_unbound:/etc/unbound
+networks: 
+  dns:
+
